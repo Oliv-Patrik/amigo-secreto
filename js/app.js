@@ -55,8 +55,6 @@ function embaralha(lista) {
     }
 }
 
-function reiniciar(){
-    amigos = [];
-    document.getElementById('lista-amigos').innerHTML = '';
-    document.getElementById('lista-sorteio').innerHTML = '';
+function reiniciar(){ //função para reiniciar a pagina e resetar os camppos de nomes
+    window.location.reload();
 }
