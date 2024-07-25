@@ -123,11 +123,16 @@ body {
   outline: none;
   padding: 8px 16px;
   width: 517px;
+  transition: box-shadow 0.3s ease;
 }
 
 .form__input::placeholder {
   color: #fff;
   font-size: 21px;
+}
+
+.form__input:focus{
+   box-shadow: 0 0 10px #1f82fa;
 }
 
 .form__label {
@@ -145,7 +150,11 @@ body {
   font-weight: 400;
   line-height: 110%;
   text-align: center;
-  text-decoration-line: underline;
+  padding: 10px;
+}
+
+.form__link:hover {
+  border: 2px solid #00f4bf;
 }
 
 .page__image {
@@ -164,6 +173,8 @@ body {
   height: 199px;
   line-height: 160%;
   margin-top: 1rem;
+  position: relative;
+  left: 222px;
 }
 
 .prizeDraw__title {
@@ -171,11 +182,17 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
+  position: relative;
+  left: 300px;
 }
 
 .primary {
   background-color: #1875e8;
   color: #fff;
+}
+
+.primary:hover{
+  background-color: #0a5abb;
 }
 
 .section--results {
@@ -203,4 +220,9 @@ body {
 .secondary {
   background-color: #fff;
   color: #1875e8;
+}
+
+.secondary:hover{
+background-color: #ccc;
+border:2px solid #1875e8;
 }
